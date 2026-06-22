@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Valley Solar Guy · Los Angeles & San Fernando Valley Solar Repair</title>
+<meta name="description" content="Your solar installer went out of business? David fixes orphaned solar systems across the San Fernando Valley and greater Los Angeles. Diagnostics, repairs, monitoring, inverter replacement.">
+<meta name="keywords" content="solar repair Los Angeles, solar repair San Fernando Valley, solar installer went out of business, orphaned solar system, inverter repair Los Angeles, solar monitoring reconnection, Northridge solar repair, Woodland Hills solar repair, Sherman Oaks solar repair">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.thevalleysolarguy.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Valley Solar Guy · Los Angeles & San Fernando Valley Solar Repair">
+<meta property="og:description" content="Your installer vanished. I'd never. Independent solar repair & rescue across the San Fernando Valley and greater Los Angeles.">
+<meta property="og:url" content="https://www.thevalleysolarguy.com/">
+<meta property="og:image" content="https://www.thevalleysolarguy.com/logo.png">
+
+<!-- Local Business structured data for local SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ElectricalContractor",
+  "name": "The Valley Solar Guy",
+  "image": "https://www.thevalleysolarguy.com/logo.png",
+  "url": "https://www.thevalleysolarguy.com/",
+  "telephone": "+1-818-636-3740",
+  "email": "David@TheValleySolarGuy.com",
+  "description": "Independent solar repair and rescue specialist for orphaned solar systems across the San Fernando Valley and greater Los Angeles, including systems whose original installer went out of business.",
+  "areaServed": [
+    { "@type": "City", "name": "Northridge" },
+    { "@type": "City", "name": "Woodland Hills" },
+    { "@type": "City", "name": "Sherman Oaks" },
+    { "@type": "City", "name": "Chatsworth" },
+    { "@type": "City", "name": "Encino" },
+    { "@type": "City", "name": "Reseda" },
+    { "@type": "City", "name": "West Hills" },
+    { "@type": "City", "name": "Santa Clarita" },
+    { "@type": "City", "name": "Simi Valley" },
+    { "@type": "City", "name": "Thousand Oaks" },
+    { "@type": "City", "name": "Burbank" },
+    { "@type": "City", "name": "Glendale" },
+    { "@type": "City", "name": "Pasadena" },
+    { "@type": "City", "name": "Los Angeles" }
+  ],
+  "knowsAbout": ["solar repair", "solar inverter repair", "solar monitoring reconnection", "orphaned solar systems", "solar warranty claims", "solar panel inspection"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+:root {
+  --ink: #0D1117;
+  --ink2: #161B22;
+  --ink3: #21262D;
+  --border: rgba(255,255,255,0.08);
+  --muted: #7D8590;
+  --body: #C9D1D9;
+  --white: #F0F6FC;
+  --amber: #E6973A;
+  --amber-dim: rgba(230,151,58,0.12);
+  --amber-border: rgba(230,151,58,0.3);
+  --green: #3FB950;
+  --green-dim: rgba(63,185,80,0.1);
+  --red: #F85149;
+  --red-dim: rgba(248,81,73,0.1);
+  --sky: #58A6FF;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--ink);
+  color: var(--body);
+  overflow-x: hidden;
+}
+
+/* ── UTILITY ── */
+.container { max-width: 1080px; margin: 0 auto; padding: 0 2rem; }
+.label {
+  font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--amber); font-weight: 500; margin-bottom: 0.75rem;
+  display: flex; align-items: center; gap: 0.5rem;
+}
+.label::before { content: ''; width: 20px; height: 1px; background: var(--amber); }
+
+/* ── NAV ── */
+nav {
+  position: fixed; top: 0; width: 100%; z-index: 100;
+  padding: 1.1rem 2rem;
+  display: flex; align-items: center; justify-content: space-between;
+  background: rgba(13,17,23,0.92); backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+}
+.nav-brand {
+  display: flex; align-items: center; gap: 0.75rem;
+  text-decoration: none;
+}
+.nav-logo { height: 44px; }
+.nav-name {
+  font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 700;
+  color: var(--white); line-height: 1.2;
+}
+.nav-name span { display: block; font-size: 0.7rem; font-weight: 400; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; }
+.nav-links { display: flex; gap: 2rem; align-items: center; }
+.nav-links a { color: var(--muted); text-decoration: none; font-size: 0.875rem; transition: color 0.2s; }
+.nav-links a:hover { color: var(--white); }
+.nav-cta {
+  background: var(--amber); color: var(--ink); padding: 0.5rem 1.25rem;
+  border-radius: 6px; font-size: 0.875rem; font-weight: 600;
+  text-decoration: none; transition: opacity 0.2s;
+}
+.nav-cta:hover { opacity: 0.85; }
+
+/* ── HERO ── */
+.hero {
+  min-height: 100vh; display: flex; align-items: center;
+  padding: 8rem 2rem 5rem;
+  position: relative; overflow: hidden;
+}
+.hero-noise {
+  position: absolute; inset: 0; pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+  background-size: 200px;
+}
+.hero-glow {
+  position: absolute; top: -200px; right: -100px;
+  width: 700px; height: 700px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(230,151,58,0.06) 0%, transparent 65%);
+  pointer-events: none;
+}
+.hero-inner {
+  max-width: 1080px; margin: 0 auto; width: 100%;
+  display: grid; grid-template-columns: 1fr 380px; gap: 4rem; align-items: center;
+}
+
+/* alert bar */
+.alert-bar {
+  display: inline-flex; align-items: center; gap: 0.6rem;
+  background: var(--red-dim); border: 1px solid rgba(248,81,73,0.25);
+  border-radius: 6px; padding: 0.5rem 1rem; margin-bottom: 2rem;
+  font-size: 0.8rem; color: #FF7B72;
+}
+.alert-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--red); animation: pulse 1.8s infinite; flex-shrink: 0; }
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.4)} }
+
+h1 {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2.8rem, 5.5vw, 4.8rem);
+  font-weight: 800; line-height: 1.0;
+  color: var(--white); margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+h1 em { font-style: normal; color: var(--amber); }
+h1 .kw {
+  display: block;
+  font-size: clamp(1.1rem, 2vw, 1.6rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--amber);
+  margin-bottom: 0.6rem;
+}
+
+.hero-sub {
+  font-size: 1.05rem; color: var(--muted); line-height: 1.75;
+  max-width: 500px; margin-bottom: 2.5rem;
+}
+
+.hero-btns { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 3rem; }
+.btn-amber {
+  background: var(--amber); color: var(--ink); padding: 0.85rem 1.75rem;
+  border-radius: 8px; font-size: 0.95rem; font-weight: 600;
+  text-decoration: none; transition: opacity 0.2s, transform 0.15s;
+}
+.btn-amber:hover { opacity: 0.88; transform: translateY(-1px); }
+.btn-outline {
+  border: 1px solid var(--border); color: var(--body); padding: 0.85rem 1.75rem;
+  border-radius: 8px; font-size: 0.95rem;
+  text-decoration: none; transition: border-color 0.2s, background 0.2s;
+}
+.btn-outline:hover { border-color: rgba(255,255,255,0.2); background: rgba(255,255,255,0.04); }
+
+/* system status card */
+.status-card {
+  background: var(--ink2); border: 1px solid var(--border);
+  border-radius: 14px; overflow: hidden;
+}
+.status-header {
+  padding: 1rem 1.25rem; border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: space-between;
+}
+.status-header-title { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+.status-badge {
+  font-size: 0.7rem; padding: 0.2rem 0.6rem; border-radius: 100px;
+  font-weight: 600; letter-spacing: 0.05em;
+}
+.badge-error { background: var(--red-dim); color: var(--red); border: 1px solid rgba(248,81,73,0.2); }
+.badge-ok { background: var(--green-dim); color: var(--green); border: 1px solid rgba(63,185,80,0.2); }
+.status-rows { padding: 0.75rem 0; }
+.status-row {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.65rem 1.25rem; font-size: 0.825rem;
+}
+.status-row:hover { background: rgba(255,255,255,0.02); }
+.status-row-label { color: var(--muted); display: flex; align-items: center; gap: 0.5rem; }
+.status-icon { font-size: 0.9rem; }
+.status-val-err { color: var(--red); font-weight: 500; }
+.status-val-ok { color: var(--green); font-weight: 500; }
+.status-val-warn { color: var(--amber); font-weight: 500; }
+.status-footer {
+  padding: 1rem 1.25rem; border-top: 1px solid var(--border);
+  font-size: 0.775rem; color: var(--muted);
+  display: flex; align-items: center; justify-content: space-between;
+}
+.david-mini { display: flex; align-items: center; gap: 0.6rem; }
+.david-mini img { height: 32px; filter: brightness(1.1); }
+.david-mini span { font-size: 0.775rem; color: var(--amber); font-weight: 500; }
+
+/* trust strip */
+.trust-strip {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 0;
+  display: flex; align-items: center; gap: 2.5rem;
+  flex-wrap: wrap;
+}
+.trust-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; color: var(--muted); }
+.trust-item strong { color: var(--body); }
+
+/* ── PROBLEM ── */
+.problem-section { padding: 6rem 0; background: var(--ink2); }
+.problem-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
+.problem-card {
+  padding: 1.75rem; border-radius: 10px;
+  border: 1px solid var(--border); background: rgba(255,255,255,0.02);
+  position: relative;
+}
+.problem-card::before {
+  content: ''; position: absolute; top: 0; left: 1.5rem; right: 1.5rem; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(248,81,73,0.4), transparent);
+}
+.prob-icon { font-size: 1.5rem; margin-bottom: 1rem; }
+.problem-card h3 { font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: 0.5rem; }
+.problem-card p { font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
+
+/* ── SERVICES ── */
+.services-section { padding: 6rem 0; }
+h2 {
+  font-family: 'Syne', sans-serif; font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 800; color: var(--white); letter-spacing: -0.02em; line-height: 1.1;
+}
+.services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; margin-top: 3rem; }
+.service-card {
+  background: var(--ink2); border: 1px solid var(--border);
+  border-radius: 12px; padding: 2rem;
+  transition: border-color 0.2s;
+}
+.service-card:hover { border-color: rgba(230,151,58,0.25); }
+.service-num {
+  font-family: 'Syne', sans-serif; font-size: 0.7rem; font-weight: 700;
+  color: var(--amber); letter-spacing: 0.1em; margin-bottom: 1rem;
+}
+.service-card h3 { font-family: 'Syne', sans-serif; font-size: 1.15rem; font-weight: 700; color: var(--white); margin-bottom: 0.6rem; }
+.service-card p { font-size: 0.875rem; color: var(--muted); line-height: 1.65; }
+
+/* ── BRANDS ── */
+.brands-section { padding: 4rem 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.brands-label { text-align: center; font-size: 0.75rem; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 2rem; }
+.brands-list {
+  display: flex; align-items: center; justify-content: center;
+  flex-wrap: wrap; gap: 0.75rem;
+}
+.brand-pill {
+  padding: 0.5rem 1.1rem; border-radius: 100px;
+  border: 1px solid var(--border); font-size: 0.8rem; color: var(--muted);
+  background: var(--ink2); transition: border-color 0.2s, color 0.2s;
+}
+.brand-pill:hover { border-color: var(--amber-border); color: var(--amber); }
+
+/* ── PROCESS ── */
+.process-section { padding: 6rem 0; background: var(--ink2); }
+.process-steps { display: flex; flex-direction: column; gap: 0; margin-top: 3rem; max-width: 680px; }
+.process-step { display: grid; grid-template-columns: 56px 1fr; gap: 1.5rem; position: relative; }
+.process-step:not(:last-child)::after {
+  content: ''; position: absolute; left: 27px; top: 52px; bottom: -20px; width: 1px;
+  background: linear-gradient(to bottom, var(--amber-border), transparent);
+}
+.process-step-num {
+  width: 56px; height: 56px; border-radius: 50%;
+  background: var(--amber-dim); border: 1px solid var(--amber-border);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 800; color: var(--amber);
+  flex-shrink: 0;
+}
+.process-step-body { padding-bottom: 2.5rem; }
+.process-step-body h3 { font-family: 'Syne', sans-serif; font-size: 1.05rem; font-weight: 700; color: var(--white); margin-bottom: 0.4rem; }
+.process-step-body p { font-size: 0.875rem; color: var(--muted); line-height: 1.65; }
+
+/* ── AREA ── */
+.area-section { padding: 6rem 0; }
+.area-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+.area-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.5rem; }
+.area-tag {
+  padding: 0.4rem 0.9rem; border-radius: 6px; font-size: 0.8rem;
+  border: 1px solid var(--border); color: var(--muted);
+}
+.area-tag.primary { border-color: var(--amber-border); color: var(--amber); background: var(--amber-dim); }
+.area-note { margin-top: 2rem; font-size: 0.875rem; color: var(--muted); line-height: 1.65; padding: 1.25rem; border-left: 2px solid var(--amber); background: rgba(230,151,58,0.05); border-radius: 0 8px 8px 0; }
+.area-david { text-align: center; }
+.area-david img { width: 100%; max-width: 300px; filter: drop-shadow(0 20px 50px rgba(230,151,58,0.15)); }
+
+/* ── REVIEWS ── */
+.reviews-section { padding: 6rem 0; background: var(--ink2); }
+.reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; margin-top: 3rem; }
+.review-card {
+  background: var(--ink); border: 1px solid var(--border);
+  border-radius: 12px; padding: 1.75rem;
+}
+.review-stars { color: var(--amber); font-size: 0.75rem; letter-spacing: 3px; margin-bottom: 1rem; }
+.review-card p { font-size: 0.875rem; color: var(--body); line-height: 1.7; margin-bottom: 1.25rem; font-style: italic; }
+.review-author { font-size: 0.775rem; color: var(--muted); font-weight: 500; }
+
+/* ── CTA BAND ── */
+.cta-band {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, rgba(230,151,58,0.1) 0%, rgba(230,151,58,0.03) 100%);
+  border-top: 1px solid var(--amber-border); border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+.cta-band h2 { margin-bottom: 1rem; }
+.cta-band p { color: var(--muted); max-width: 480px; margin: 0 auto 2.5rem; font-size: 0.95rem; line-height: 1.7; }
+
+/* ── CONTACT ── */
+.contact-section { padding: 6rem 0; }
+.contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; }
+.contact-left h2 { margin-bottom: 1rem; }
+.contact-left p { color: var(--muted); line-height: 1.7; margin-bottom: 2rem; font-size: 0.95rem; }
+.contact-link {
+  display: flex; align-items: center; gap: 0.75rem;
+  color: var(--body); text-decoration: none; font-size: 0.9rem;
+  margin-bottom: 1rem; transition: color 0.2s;
+}
+.contact-link:hover { color: var(--amber); }
+.cl-icon {
+  width: 38px; height: 38px; border-radius: 8px;
+  background: var(--amber-dim); border: 1px solid var(--amber-border);
+  display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0;
+}
+
+form { display: flex; flex-direction: column; gap: 0.875rem; }
+input, textarea, select {
+  background: var(--ink2); border: 1px solid var(--border);
+  color: var(--white); border-radius: 8px; padding: 0.8rem 1rem;
+  font-family: 'Inter', sans-serif; font-size: 0.9rem; width: 100%;
+  transition: border-color 0.2s; outline: none;
+  -webkit-appearance: none;
+}
+input::placeholder, textarea::placeholder { color: var(--muted); }
+input:focus, textarea:focus, select:focus { border-color: var(--amber); }
+select option { background: var(--ink2); }
+textarea { resize: vertical; min-height: 110px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.875rem; }
+.submit-btn {
+  background: var(--amber); color: var(--ink); border: none;
+  padding: 0.9rem; border-radius: 8px; font-size: 0.95rem; font-weight: 600;
+  cursor: pointer; font-family: 'Inter', sans-serif; transition: opacity 0.2s;
+}
+.submit-btn:hover { opacity: 0.85; }
+
+/* ── FOOTER ── */
+footer {
+  border-top: 1px solid var(--border); padding: 2rem 2rem;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 1rem;
+}
+.footer-brand { display: flex; align-items: center; gap: 0.6rem; }
+.footer-brand img { height: 36px; }
+.footer-brand span { font-size: 0.8rem; color: var(--muted); }
+footer p { font-size: 0.8rem; color: var(--muted); }
+footer a { color: var(--amber); text-decoration: none; }
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  nav { padding: 0.85rem 1.2rem; }
+  .hero { padding: 7rem 1.2rem 4rem; }
+  .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .status-card { display: none; }
+  h1 { font-size: 2.8rem; }
+  .problem-grid { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: 1fr; }
+  .process-steps { max-width: 100%; }
+  .area-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .area-david { display: none; }
+  .reviews-grid { grid-template-columns: 1fr; }
+  .contact-inner { grid-template-columns: 1fr; gap: 3rem; }
+  .form-row { grid-template-columns: 1fr; }
+  footer { flex-direction: column; align-items: flex-start; }
+  .trust-strip { gap: 1.25rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-brand">
+    <img src="logo.png" alt="" class="nav-logo">
+    <div class="nav-name">The Valley Solar Guy<span>Solar Rescue · Los Angeles</span></div>
+  </a>
+  <div class="nav-links">
+    <a href="#problem">The Problem</a>
+    <a href="#services">Services</a>
+    <a href="#process">Process</a>
+    <a href="#area">Service Area</a>
+    <a href="#contact" class="nav-cta">Get Help Now</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-noise"></div>
+  <div class="hero-glow"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div>
+        <div class="alert-bar">
+          <div class="alert-dot"></div>
+          Your solar system may be losing money right now
+        </div>
+        <h1><span class="kw">LA Solar Repair</span>Your Installer<br>Vanished.<br><em>I'd Never.</em></h1>
+        <p class="hero-sub">When your solar company closes, your system doesn't stop needing care. I specialize in getting orphaned systems back online across the San Fernando Valley and greater Los Angeles.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-amber">Get a Free Diagnosis →</a>
+          <a href="tel:8186363740" class="btn-outline">📞 818.636.3740</a>
+        </div>
+        <div class="trust-strip">
+          <div class="trust-item"><strong>10+</strong> years in solar</div>
+          <div class="trust-item"><strong>Independent</strong> — no company loyalty</div>
+          <div class="trust-item"><strong>San Fernando Valley</strong> based</div>
+        </div>
+      </div>
+
+      <!-- Fake system status card -->
+      <div class="status-card">
+        <div class="status-header">
+          <span class="status-header-title">System Monitor</span>
+          <span class="status-badge badge-error">● OFFLINE</span>
+        </div>
+        <div class="status-rows">
+          <div class="status-row">
+            <span class="status-row-label"><span class="status-icon">⚡</span> Inverter Status</span>
+            <span class="status-val-err">Error: No Comm</span>
+          </div>
+          <div class="status-row">
+            <span class="status-row-label"><span class="status-icon">☀️</span> Solar Production</span>
+            <span class="status-val-err">0.0 kW</span>
+          </div>
+          <div class="status-row">
+            <span class="status-row-label"><span class="status-icon">📡</span> Monitoring Portal</span>
+            <span class="status-val-err">Account Inactive</span>
+          </div>
+          <div class="status-row">
+            <span class="status-row-label"><span class="status-icon">📄</span> Warranty Status</span>
+            <span class="status-val-warn">Unknown</span>
+          </div>
+          <div class="status-row">
+            <span class="status-row-label"><span class="status-icon">🔌</span> Grid Connection</span>
+            <span class="status-val-ok">Active</span>
+          </div>
+          <div class="status-row">
+            <span class="status-row-label"><span class="status-icon">🏢</span> Installer</span>
+            <span class="status-val-err">Out of Business</span>
+          </div>
+        </div>
+        <div class="status-footer">
+          <span>Last checked: just now</span>
+          <div class="david-mini">
+            <img src="logo.png" alt="">
+            <span>David can fix this →</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="problem-section" id="problem">
+  <div class="container">
+    <div class="label">The Situation</div>
+    <h2>Sound familiar?</h2>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="prob-icon">🚫</div>
+        <h3>Company closed, no warning</h3>
+        <p>Your installer shut down overnight. Phone disconnected. Website gone. You're paying a loan on a system you can't get support for.</p>
+      </div>
+      <div class="problem-card">
+        <div class="prob-icon">📉</div>
+        <h3>System stopped producing</h3>
+        <p>Your electric bill crept back up and you didn't notice for months. The monitoring app hasn't shown data in who knows how long.</p>
+      </div>
+      <div class="problem-card">
+        <div class="prob-icon">🔇</div>
+        <h3>Nobody will call you back</h3>
+        <p>You've tried other solar companies. They only want to sell you a new system. Nobody wants to service equipment they didn't install.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services-section" id="services">
+  <div class="container">
+    <div class="label">What I Fix</div>
+    <h2>Full-service solar repair</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-num">01</div>
+        <h3>System Diagnostics</h3>
+        <p>I'll assess your entire system — panels, inverter, wiring, and monitoring — and give you a straight answer on what's wrong and what it'll take to fix it.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-num">02</div>
+        <h3>Inverter Repair & Replacement</h3>
+        <p>The inverter is the most common failure point. Whether it needs a reset, a firmware update, or a full swap, I handle it — across all major brands.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-num">03</div>
+        <h3>Monitoring Reconnection</h3>
+        <p>If your monitoring portal died with your installer, I'll get you back on a live dashboard so you can actually see what your system is doing.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-num">04</div>
+        <h3>Warranty & Manufacturer Claims</h3>
+        <p>Equipment warranties survive even when installers don't. I'll navigate manufacturer claims on your behalf and get you what you're owed.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-num">05</div>
+        <h3>Panel Inspection & Repair</h3>
+        <p>Cracked panels, loose connections, shading issues, and micro-inverter failures. I inspect the full array and fix what's costing you production.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-num">06</div>
+        <h3>Permit & Utility Issues</h3>
+        <p>If your system was never properly closed out with the city or your utility, I'll handle the paperwork to get it fully legit and interconnected.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS -->
+<section class="brands-section">
+  <div class="container">
+    <div class="brands-label">Equipment I service</div>
+    <div class="brands-list">
+      <span class="brand-pill">SolarEdge</span>
+      <span class="brand-pill">Enphase</span>
+      <span class="brand-pill">SMA</span>
+      <span class="brand-pill">Fronius</span>
+      <span class="brand-pill">Tesla Solar</span>
+      <span class="brand-pill">LG Solar</span>
+      <span class="brand-pill">SunPower</span>
+      <span class="brand-pill">Canadian Solar</span>
+      <span class="brand-pill">Panasonic</span>
+      <span class="brand-pill">Generac PWRcell</span>
+      <span class="brand-pill">APsystems</span>
+      <span class="brand-pill">Growatt</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process-section" id="process">
+  <div class="container">
+    <div class="label">How It Works</div>
+    <h2>Simple, start to finish</h2>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="process-step-num">1</div>
+        <div class="process-step-body">
+          <h3>Free phone consult</h3>
+          <p>Tell me what's going on. I'll ask a few questions about your system and give you an honest read on what we're likely dealing with — at no charge.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="process-step-num">2</div>
+        <div class="process-step-body">
+          <h3>On-site diagnosis</h3>
+          <p>I come to you. Full inspection of your panels, inverter, and monitoring setup. You'll get a clear report on exactly what's wrong and what it costs to fix.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="process-step-num">3</div>
+        <div class="process-step-body">
+          <h3>Repair & restore</h3>
+          <p>I handle everything — parts sourcing, repairs, utility coordination, and monitoring reconnection. No hand-offs, no subcontractors.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="process-step-num">4</div>
+        <div class="process-step-body">
+          <h3>You're back online</h3>
+          <p>System producing. Monitoring live. I'll also make sure you know how to keep an eye on things going forward so you're never in the dark again.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AREA -->
+<section class="area-section" id="area">
+  <div class="container">
+    <div class="area-inner">
+      <div>
+        <div class="label">Where I Work</div>
+        <h2>San Fernando Valley & Greater LA</h2>
+        <p style="color:var(--muted); font-size:0.9rem; line-height:1.7; margin: 1rem 0 0.5rem;">Based in the Valley — this is my backyard.</p>
+        <div class="area-tags">
+          <span class="area-tag primary">San Fernando Valley</span>
+          <span class="area-tag primary">Northridge</span>
+          <span class="area-tag primary">Woodland Hills</span>
+          <span class="area-tag primary">Sherman Oaks</span>
+          <span class="area-tag primary">Chatsworth</span>
+          <span class="area-tag primary">Encino</span>
+          <span class="area-tag primary">Reseda</span>
+          <span class="area-tag primary">West Hills</span>
+          <span class="area-tag">Santa Clarita</span>
+          <span class="area-tag">Simi Valley</span>
+          <span class="area-tag">Thousand Oaks</span>
+          <span class="area-tag">Burbank</span>
+          <span class="area-tag">Glendale</span>
+          <span class="area-tag">Pasadena</span>
+          <span class="area-tag">Los Angeles</span>
+          <span class="area-tag">Conejo Valley</span>
+        </div>
+        <div class="area-note">Not sure if I cover your area? Call or text me at <a href="tel:8186363740" style="color:var(--amber); text-decoration:none;">818.636.3740</a> — if I can't help, I'll point you to someone who can.</div>
+      </div>
+      <div class="area-david">
+        <img src="logo.png" alt="David, The Valley Solar Guy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-section" id="reviews">
+  <div class="container">
+    <div class="label">What People Say</div>
+    <h2>Real customers, real results</h2>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p>"Our system had been down for four months. David diagnosed the problem on day one and had us back producing within the week."</p>
+        <div class="review-author">Victor C. — Woodland Hills</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p>"Our installer closed and nobody would touch our system. David was the only one who actually showed up and fixed it."</p>
+        <div class="review-author">Mike T. — Northridge</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p>"He made the whole situation easy to understand. Walked me through exactly what failed and why. No upselling, just the fix."</p>
+        <div class="review-author">Brenda H. — Encino</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p>"We had no idea our monitoring had been offline for over a year. David got everything reconnected and explained how to watch it ourselves."</p>
+        <div class="review-author">Luisa V. — Chatsworth</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p>"He sorted out a permit issue that our old installer left unfinished. Utility was about to disconnect us. David handled everything."</p>
+        <div class="review-author">Chris A. — Sherman Oaks</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p>"Called three other solar companies. All wanted to sell us a new system. David fixed ours for a fraction of the cost."</p>
+        <div class="review-author">The Mendez Family — West Hills</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <div class="label" style="justify-content:center;">Don't wait</div>
+  <h2>Every day offline is money lost</h2>
+  <p>The average Valley home with solar saves $150–$300/month. If your system is down, that's coming out of your pocket — not your utility's.</p>
+  <a href="#contact" class="btn-amber">Get a Free Diagnosis →</a>
+</div>
+
+<!-- CONTACT -->
+<section class="contact-section" id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <div class="contact-left">
+        <div class="label">Reach Out</div>
+        <h2>Let's get your system back online</h2>
+        <p>Describe what's happening and I'll get back to you same day. Free consult, no pressure.</p>
+        <a href="tel:8186363740" class="contact-link">
+          <div class="cl-icon">📞</div> 818.636.3740
+        </a>
+        <a href="mailto:david@thevalleysolarguy.com" class="contact-link">
+          <div class="cl-icon">✉️</div> David@TheValleySolarGuy.com
+        </a>
+        <a href="https://instagram.com/thevalleysolarguy" class="contact-link">
+          <div class="cl-icon">📷</div> @TheValleySolarGuy
+        </a>
+      </div>
+      <form action="https://formspree.io/f/xnjkqdal" method="POST">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="text" name="city" placeholder="City / neighborhood">
+        </div>
+        <input type="email" name="email" placeholder="Email address" required>
+        <input type="tel" name="phone" placeholder="Phone number">
+        <select name="issue">
+          <option value="" disabled selected>What's going on with your system?</option>
+          <option>Installer went out of business</option>
+          <option>System stopped producing / no output</option>
+          <option>Monitoring portal is offline</option>
+          <option>Inverter error or alarm</option>
+          <option>High electric bill despite having solar</option>
+          <option>Permit or utility interconnection issue</option>
+          <option>Panel damage or visible problem</option>
+          <option>Not sure — need a diagnosis</option>
+        </select>
+        <textarea name="message" placeholder="Any other details — system age, brand, what you've already tried..."></textarea>
+        <button type="submit" class="submit-btn">Send Message →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">
+    <img src="david.png" alt="The Valley Solar Guy">
+    <span>© 2026 The Valley Solar Guy</span>
+  </div>
+  <p>
+    <a href="tel:8186363740">818.636.3740</a>
+    &nbsp;·&nbsp;
+    <a href="mailto:david@thevalleysolarguy.com">David@TheValleySolarGuy.com</a>
+    &nbsp;·&nbsp; San Fernando Valley, CA
+  </p>
+</footer>
+
+</body>
+</html>
